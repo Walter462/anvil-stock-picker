@@ -13,7 +13,7 @@ import requests
 #   print("Hello, " + name + "!")
 #   return 42
 #
-
+@anvil.server.callable
 def getTickers():
   tickers =['APPL', 'TSLA', 'GME', 'AMC']
   return(tickers)
