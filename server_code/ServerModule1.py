@@ -14,6 +14,6 @@ import requests
 #   return 42
 #
 
-def getTicker():
+def getTickers():
   tickers =['APPL', 'TSLA', 'GME', 'AMC']
   return(tickers)
