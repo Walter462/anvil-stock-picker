@@ -1,4 +1,5 @@
 import anvil.server
+import requests 
 
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
@@ -12,3 +13,6 @@ import anvil.server
 #   print("Hello, " + name + "!")
 #   return 42
 #
+
+def getTicker():
+  tickers =['A']
