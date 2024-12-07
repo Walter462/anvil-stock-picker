@@ -10,3 +10,7 @@ class Form1(Form1Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run before the form opens.
+
+  def drop_down_stocks_change(self, **event_args):
+    """This method is called when an item is selected"""
+    alert("You selecred a stock " + self.drop_down_stocks.selected_value)
