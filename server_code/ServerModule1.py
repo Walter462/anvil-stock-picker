@@ -15,4 +15,5 @@ import requests
 #
 
 def getTicker():
-  tickers =['A']
+  tickers =['APPL', 'TSLA', 'GME', 'AMC']
+  return(tickers)
