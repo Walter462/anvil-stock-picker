@@ -8,9 +8,16 @@ runtime_options:
   server_spec: {base: python310-minimal}
   server_version: python3-sandbox
   version: 2
+secrets:
+  FinnHubAPI:
+    type: secret
+    value: {NGZXZ7MERXT7LE3J: 7P/6lRrne/UvjOxsaxK18ZndzC5rFko5/zwnFPOzKkmST+b8vqe1WVoMViyeyMd8lxIBLjeNYu3YEWR38DMoFf7DvPHGK8PpXI3j3lzaxh5DVpjEsFfScUfUlue1+Q/pvuc5Yffaf65tBkzGYPdml0PP8kYPilJUqaUILfQDDunazZ6m6sTW}
 services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/secrets.yml
 startup: null
 startup_form: Form1
