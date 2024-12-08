@@ -1,6 +1,8 @@
+import anvil.secrets
 import anvil.server
 import requests 
 
+FINNHUB_KEY = anvil.secrets.get_secret("FinnHubAPI")
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
 #
@@ -13,6 +15,7 @@ import requests
 #   print("Hello, " + name + "!")
 #   return 42
 #
+
 @anvil.server.callable
 def getTickers():
   tickers =['AAPL', 'TSLA', 'GME', 'AMC']
@@ -20,6 +23,6 @@ def getTickers():
 
 @anvil.server.callable
 def getPrice(ticker):
-  r = requests.get(f'https://finnhub.io/api/v1/quote?symbol={ticker}&token=ct9us41r01quh43ouhf0ct9us41r01quh43ouhfg')
+  r = requests.get(f'https://finnhub.io/api/v1/quote?symbol={ticker}&token={FINNHUB_KEY}')
   price = r.json()['c']
   return(price)
