@@ -6,7 +6,7 @@ components:
       properties: {text: Pick a stock}
       type: Label
     - data_bindings: []
-      event_bindings: {change: drop_down_stocks_change}
+      event_bindings: {change: drop_down_stocks_change, show: drop_down_stocks_show}
       layout_properties: {full_width_row: false, grid_position: 'LJGNOM,LOMVIY'}
       name: drop_down_stocks
       properties:

@@ -16,5 +16,12 @@ class Form1(Form1Template):
   def drop_down_stocks_change(self, **event_args):
     """This method is called when an item is selected"""
     #alert("You selecred a stock " + self.drop_down_stocks.selected_value)
-    self.stockTicker.text = self.drop_down_stocks.selected_value
-    self.stockPrice.text = anvil.server.call('getPrice')
+    ticker = self.drop_down_stocks.selected_value
+    self.stockTicker.text = ticker
+    self.stockPrice.text = anvil.server.call('getPrice', ticker)
+
+  def drop_down_stocks_show(self, **event_args):
+    """This method is called when the DropDown is shown on the screen"""
+    ticker = self.drop_down_stocks.selected_value
+    self.stockTicker.text = ticker
+    self.stockPrice.text = anvil.server.call('getPrice', ticker)
