@@ -17,4 +17,4 @@ class Form1(Form1Template):
     """This method is called when an item is selected"""
     #alert("You selecred a stock " + self.drop_down_stocks.selected_value)
     self.stockTicker.text = self.drop_down_stocks.selected_value
-    self.stockPrice.text = '100'
+    self.stockPrice.text = anvil.server.call('getPrice')
