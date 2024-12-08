@@ -9,7 +9,7 @@ components:
       layout_properties: {full_width_row: false, grid_position: 'LJGNOM,LOMVIY'}
       name: drop_down_stocks
       properties:
-        items: [AAPL, TSLA]
+        items: [AAPL, TSLA, NFLX]
       type: DropDown
     layout_properties: {grid_position: 'ZDKEPQ,PZQOHI'}
     name: outlined_card_1
