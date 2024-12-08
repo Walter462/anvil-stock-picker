@@ -15,5 +15,11 @@ import requests
 #
 @anvil.server.callable
 def getTickers():
-  tickers =['','APPL', 'TSLA', 'GME', 'AMC']
+  tickers =['AAPL', 'TSLA', 'GME', 'AMC']
   return(tickers)
+
+@anvil.server.callable
+def getPrice(ticker):
+  r = requests.get(f'https://finnhub.io/api/v1/quote?symbol={ticker}&token=ct9us41r01quh43ouhf0ct9us41r01quh43ouhfg')
+  price = r.json()['c']
+  return(price)
