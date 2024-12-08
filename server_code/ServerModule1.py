@@ -2,6 +2,8 @@ import anvil.secrets
 import anvil.server
 import requests 
 
+
+# | NOTE: Securely setting FinnHub API as constant  | File: KnowlegeBase/IT/Development/DataDrivenApps/Anvil/Tutorials/StockPicker | ID: 1733641711 |
 FINNHUB_KEY = anvil.secrets.get_secret("FinnHubAPI")
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
