@@ -5,11 +5,12 @@ components:
       name: label_1
       properties: {text: Pick a stock}
       type: Label
-    - event_bindings: {change: drop_down_stocks_change}
+    - data_bindings: []
+      event_bindings: {change: drop_down_stocks_change}
       layout_properties: {full_width_row: false, grid_position: 'LJGNOM,LOMVIY'}
       name: drop_down_stocks
       properties:
-        items: [AAPL, TSLA, NFLX]
+        items: []
       type: DropDown
     layout_properties: {grid_position: 'ZDKEPQ,PZQOHI'}
     name: outlined_card_1

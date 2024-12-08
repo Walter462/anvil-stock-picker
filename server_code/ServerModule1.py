@@ -15,5 +15,5 @@ import requests
 #
 @anvil.server.callable
 def getTickers():
-  tickers =['APPL', 'TSLA', 'GME', 'AMC']
+  tickers =['','APPL', 'TSLA', 'GME', 'AMC']
   return(tickers)
