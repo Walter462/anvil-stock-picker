@@ -47,7 +47,7 @@ components:
     type: ColumnPanel
   layout_properties: {slot: default}
   name: content_panel
-  properties: {}
+  properties: {visible: true}
   type: ColumnPanel
 - layout_properties: {slot: nav-right}
   name: navbar_links
